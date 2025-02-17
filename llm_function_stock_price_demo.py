@@ -13,13 +13,13 @@ load_dotenv()
 
 # Retrieve API keys from environment variables
 groq_api_key = os.getenv("GROQ_API_KEY")
-alphavantage_api_key = os.getenv("alphavantage_API_KEY")
+alphavantage_api_key = os.getenv("ALPHAVANTAGE_API_KEY")
 
 # Ensure required API keys are provided
 if not groq_api_key:
     raise ValueError("GROQ_API_KEY environment variable is not set")
 if not alphavantage_api_key:
-    raise ValueError("alphavantage_API_KEY environment variable is not set")
+    raise ValueError("ALPHAVANTAGE_API_KEY environment variable is not set")
 
 # Initialize Groq client and specify model
 client = Groq(api_key=groq_api_key)

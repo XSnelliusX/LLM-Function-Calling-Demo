@@ -43,7 +43,7 @@ pip install groq python-dotenv requests
 4. Create a `.env` file in the project root:
 ```plaintext
 GROQ_API_KEY=your_groq_api_key_here
-alphavantage_API_KEY=your_alphavantage_api_key_here
+ALPHAVANTAGE_API_KEY=your_alphavantage_api_key_here
 ```
 
 ## Running the Demos
